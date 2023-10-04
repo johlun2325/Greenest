@@ -24,22 +24,25 @@ public class Main {
     public static void main(String[] args) {
         Main m = new Main();
 
-        String inputName = JOptionPane.showInputDialog("Vilken växt ska få mat?");
-
         boolean isFound = false;
+        String askWhatPlantMsg = "Vilken växt ska få mat?";
+        String plantNotFoundMsg = "Växten finns inte hos oss.";
+
+        String inputName = JOptionPane.showInputDialog(askWhatPlantMsg);
 
         for (Plants plant : m.listOfPlants) {
             if (plant.getName().equalsIgnoreCase(inputName)) {
 
-                String message = plant.printWaterInstruction(plant.getAmountOfLiquid(), plant.getTypeOfLiquid(), plant);
-                JOptionPane.showMessageDialog(null, message);
+                String waterInstruction =
+                        plant.printWaterInstruction(plant.getAmountOfLiquid(), plant.getTypeOfLiquid(), plant);
+                JOptionPane.showMessageDialog(null, waterInstruction);
 
                 isFound = true;
                 break;
             }
         }
         if (!isFound)
-            JOptionPane.showMessageDialog(null, "Växten finns inte hos oss.");
+            JOptionPane.showMessageDialog(null, plantNotFoundMsg);
 
     }
 }

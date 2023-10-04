@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public abstract class Plants implements waterForPlants{
 
+    //Inkapsling, privata variabler, går endast att komma åt utanför den egna klassen via setters och getters.
     private String name;
     private double length;
     private String typeOfLiquid;

@@ -7,12 +7,11 @@ public class Palm extends Plants {
     //Polymorfism, 2 metoder
     @Override
     public double howToWaterPlant(Plants plant) {
-        double amountOfLiquid = 0.5 * plant.getLength();
-        return amountOfLiquid;
+        return 0.5 * plant.getLength();
     }
 
     @Override
-    public String printWaterInstruction(double amountOfWater, String typeOfLiquid, Plants plant) {
-        return plant.getName() + " ska ha " + amountOfWater + " liter " +  typeOfLiquid;
+    public String printWaterInstruction(double amountOfLiquid, String typeOfLiquid, Plants plant) {
+        return plant.getName() + " ska ha " + amountOfLiquid + " liter " +  typeOfLiquid;
     }
 }

@@ -9,14 +9,10 @@ public class Carnivorous extends Plants{
     // Polymorfism, 2 metoder
     @Override
     public double howToWaterPlant(Plants plant) {
-        double waterForCarnivore = 0.1 + (0.2 * plant.getLength());
-        return waterForCarnivore;
+        return 0.1 + (0.2 * plant.getLength());
     }
     @Override
-    public String printWaterInstruction(double amountOfWater, String typeOfLiquid, Plants plant) {
-        return plant.getName() + " ska ha " + amountOfWater + " liter " +  typeOfLiquid;
+    public String printWaterInstruction(double amountOfLiquid, String typeOfLiquid, Plants plant) {
+        return plant.getName() + " ska ha " + amountOfLiquid + " liter " +  typeOfLiquid;
     }
-
-    /*Kött
-0.1 + (0.2 * längd) proteindryck/dag*/
 }

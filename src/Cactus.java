@@ -1,8 +1,8 @@
 public class Cactus extends Plants{
-    public Cactus(String name, double length, double amountOfLiquid) {
+    public Cactus(String name, double length) {
         super(name, length);
         this.setTypeOfLiquid(liquids.MINERALVATTEN.liquidType);
-        this.setAmountOfLiquid(0.2); //cl
+        this.setAmountOfLiquid(0.02);
     }
 
     //Polymorfism, 2 metoder
@@ -12,7 +12,7 @@ public class Cactus extends Plants{
     }
 
     @Override
-    public String printWaterInstruction(double amountOfWater, String typeOfLiquid, Plants plant) {
-        return plant.getName() + " ska ha " + amountOfWater + " cl " +  typeOfLiquid;
+    public String printWaterInstruction(double amountOfLiquid, String typeOfLiquid, Plants plant) {
+        return plant.getName() + " ska ha " + amountOfLiquid + " liter (2 cl) " +  typeOfLiquid;
     }
 }

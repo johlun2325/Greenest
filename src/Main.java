@@ -5,7 +5,7 @@ public class Main {
 
     Plants laura = new Palm("Laura", 5);
     Plants olof = new Palm("Olof", 1);
-    Plants igge = new Cactus("Igge", 0.2, 0.2);
+    Plants igge = new Cactus("Igge", 0.2);
     Plants meatloaf = new Carnivorous("Meatloaf", 0.7);
     ArrayList<Plants> listOfPlants = new ArrayList<>();
 
@@ -42,6 +42,5 @@ public class Main {
         }
         if (!isFound)
             JOptionPane.showMessageDialog(null, plantNotFoundMsg);
-
     }
 }

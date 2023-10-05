@@ -7,7 +7,7 @@ public class Cactus extends Plants{
 
     //Polymorfism, 2 metoder
     @Override
-    public double howToWaterPlant(Plants plant) {
+    public double calculateAmountOfWater(Plants plant) {
         return getAmountOfLiquid();
     }
 

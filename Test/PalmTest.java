@@ -7,7 +7,7 @@ class PalmTest {
 
     @Test
     void howToWaterPlant() {
-        p.setAmountOfLiquid(p.howToWaterPlant(p));
+        p.setAmountOfLiquid(p.calculateAmountOfWater(p));
         double expectedValue = 2.5;
         double actualValue = p.getAmountOfLiquid();
         Assertions.assertEquals(expectedValue, actualValue);

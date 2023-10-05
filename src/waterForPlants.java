@@ -12,6 +12,6 @@ public interface waterForPlants {
     }
 
     //Polymorfism, dessa två metoder implementeras olika i tre klasser
-    public double howToWaterPlant(Plants plant);
+    public double calculateAmountOfWater(Plants plant);
     public String printWaterInstruction(double amountOfWater, String typeOfLiquid, Plants plant);
 }

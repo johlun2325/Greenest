@@ -6,7 +6,7 @@ public class Palm extends Plants {
 
     //Polymorfism, 2 metoder
     @Override
-    public double howToWaterPlant(Plants plant) {
+    public double calculateAmountOfWater(Plants plant) {
         return 0.5 * plant.getLength();
     }
 

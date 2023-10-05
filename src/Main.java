@@ -10,9 +10,9 @@ public class Main {
     ArrayList<Plants> listOfPlants = new ArrayList<>();
 
     Main() {
-        laura.setAmountOfLiquid(laura.howToWaterPlant(laura));
-        olof.setAmountOfLiquid(olof.howToWaterPlant(olof));
-        meatloaf.setAmountOfLiquid(meatloaf.howToWaterPlant(meatloaf));
+        laura.setAmountOfLiquid(laura.calculateAmountOfWater(laura));
+        olof.setAmountOfLiquid(olof.calculateAmountOfWater(olof));
+        meatloaf.setAmountOfLiquid(meatloaf.calculateAmountOfWater(meatloaf));
         listOfPlants.add(laura);
         listOfPlants.add(olof);
         listOfPlants.add(igge);

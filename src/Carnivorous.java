@@ -8,7 +8,7 @@ public class Carnivorous extends Plants{
 
     // Polymorfism, 2 metoder
     @Override
-    public double howToWaterPlant(Plants plant) {
+    public double calculateAmountOfWater(Plants plant) {
         return 0.1 + (0.2 * plant.getLength());
     }
     @Override
